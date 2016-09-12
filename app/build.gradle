@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         applicationId "co.locarta.sdk.demo"
         minSdkVersion 7
-        targetSdkVersion 22
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
@@ -43,9 +43,9 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.2.0'
 
-    compile ("co.locarta:locarta-sdk:1.1.2:pubProd@aar") {
+    compile ("co.locarta:locarta-sdk:1.1.4:pubProd@aar") {
         transitive = true;
     }
 
