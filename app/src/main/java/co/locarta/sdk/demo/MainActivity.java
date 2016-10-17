@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
      * For Android SDK < 23 you don't need to ask permissions by yourself.
      */
     private void showAgreementDialog() {
-        if (LocartaSdk.getAgreementStatus(this) != TermsStatus.ACCEPTED) {
-            LocartaSdk.showAgreementDialog(this);
+        if (!LocartaSdk.isAgreementAccepted(this)) {
+            LocartaSdk.setAgreementAccepted(this, true);
         }
     }
 
