@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Locarta Sdk Demo</string>
+    <string name="permission_explaination">We need a location permission to track your location for marketing research</string>
 </resources>

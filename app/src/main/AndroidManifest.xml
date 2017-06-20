@@ -11,7 +11,7 @@
         com.google.android.gms.base, com.google.android.gms.tasks, com.google.android.gms.gcm,
         com.google.android.gms.iid, android.support.v7.appcompat, android.support.graphics.drawable,
         android.support.compat, android.support.v4, android.support.coreutils, android.support.mediacompat,
-        android.support.coreui, android.support.fragment" />
+        android.support.coreui, android.support.fragment"/>
 
     <application
         android:name="co.locarta.sdk.demo.DemoApplication"
@@ -22,15 +22,15 @@
         android:theme="@style/AppTheme">
         <activity android:name="co.locarta.sdk.demo.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <meta-data
             android:name="co.locarta.sdk.pid"
-            android:value="{INSERT YOUR PUBLISHER ID}" />
+            android:value="@string/locarta_sdk_pid"/>
 
     </application>
 
